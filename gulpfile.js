@@ -21,11 +21,12 @@ elixir(function(mix) {
     'libs/font-awesome.css',
     'libs/metisMenu.css',
     'libs/sb-admin-2.css',
-    'libs/styles.css'
+    'libs/scripts.css'
 
 
 
-])
+
+],'./public/css/libs.css')
 
         .scripts([
 
@@ -33,6 +34,8 @@ elixir(function(mix) {
             'libs/jquery.js',
             'libs/metisMenu.js',
             'libs/sb-admin-2.js',
+            'libs/html5shiv.js',
+            'libs/respond.min.js',
             'libs/scripts.js'
 
 
