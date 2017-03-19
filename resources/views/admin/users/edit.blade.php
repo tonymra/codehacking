@@ -68,7 +68,10 @@
 
     <div class="form-group">
         {!! Form::submit('Update',
-          array('class'=>'btn btn-primary')) !!}
+          array('class'=>'btn btn-primary col-sm-6')) !!}
+
+
+
     </div>
 
 
@@ -76,7 +79,22 @@
     {!! Form::close() !!}
 
 
-    </div>
+
+
+
+        {!! Form::open(['method'=>'DELETE' ,'action'=>['AdminUsersController@destroy',$user->id]]) !!}
+
+
+            <div class="form-group">
+                {!! Form::submit('Delete',
+                  array('class'=>'btn btn-danger col-sm-6')) !!}
+            </div>
+            {!! Form::close() !!}
+
+        </div>
+
+
+
 
 
 @stop
