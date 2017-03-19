@@ -1,3 +1,13 @@
-<h1>Custom 404 Page</h1>
+@extends('layouts.app')
 
-<h2><a href="/">Go Home</a></h2>
+
+
+@section('content')
+
+
+
+    <h1 class="text-center">Opps no page available</h1>
+
+    <h3 class="text-center"><a href="/">Go home</a></h3>
+
+    @stop
