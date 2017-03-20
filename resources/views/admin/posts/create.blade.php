@@ -23,7 +23,7 @@
     <div class="form-group">
         {!! Form::label('category_id','Category') !!}
         {!! Form::select('category_id',
-            array(''=>'Please select'),
+            [''=>'Choose category...'] + $categories,
             null,
             array('class'=>'form-control' )) !!}
     </div>
